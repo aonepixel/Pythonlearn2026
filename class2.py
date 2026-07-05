@@ -4,4 +4,7 @@ c=(a+b)
 d=(a*b)
 print(c)
 print(d)
-studen1=
+
+
+# this link for learn js free
+# https://www.codecademy.com/catalog/language/javascript
