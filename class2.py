@@ -1,4 +1,6 @@
 a=int(input("Enter First Value: "))
 b=int(input("Enter Second Value: "))
 c=(a+b)
+d=(a*b)
 print(c)
+print(d)
