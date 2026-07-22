@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anidam | Creative Agency</title>
+
+  <meta name="description" content="Anidam is a creative freelancer helping businesses build memorable digital experiences through branding, web design, and creative strategy." />
+  <meta name="keywords" content="Freelancer, Creative Agency, Web Design, Branding, UI UX, Portfolio" />
+  <meta name="author" content="Anidam" />
+  <meta name="theme-color" content="#fafafa" />
+
+  <meta property="og:title" content="Anidam | Creative Agency">
+  <meta property="og:description" content="Minimal portfolio showcasing creative services, projects, and experience.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Ctext x='50%25' y='55%25' font-size='30' text-anchor='middle' fill='white' font-family='Arial'%3EA%3C/text%3E%3C/svg%3E">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: "#ff2900",
+            soft: "#F7F7F7",
+            border: "#E8E8E8"
+          },
+          fontFamily: {
+            heading: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 15px 40px rgba(0,0,0,.06)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      background:#ffffff;
+    }
+
+    .card{
+      @apply bg-white rounded-3xl border border-border shadow-soft;
+    }
+
+    .fade{
+      opacity:0;
+      transform:translateY(30px);
+      transition:all .8s ease;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform:none;
+    }
+
+    .grid-auto{
+      display:grid;
+      gap:1.5rem;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+
+    .project:hover{
+      transform:translateY(-6px);
+    }
+  </style>
+</head>
+
+<body class="font-body text-gray-800">
+
+<!-- Header -->
+
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <a href="#" class="font-heading text-xl font-bold">
+      Anidam
+    </a>
+
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#about" class="hover:text-accent transition">About</a>
+      <a href="#projects" class="hover:text-accent transition">Projects</a>
+      <a href="#experience" class="hover:text-accent transition">Experience</a>
+      <a href="#services" class="hover:text-accent transition">Services</a>
+      <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
+      <a href="#contact" class="hover:text-accent transition">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="pt-28">
+
+<!-- HERO -->
+
+<section class="max-w-7xl mx-auto px-6 pb-12">
+
+<div class="grid lg:grid-cols-3 gap-6">
+
+<div class="lg:col-span-2 card p-10 fade">
+
+<p class="uppercase tracking-[.25em] text-accent text-sm font-semibold mb-4">
+Creative Agency
+</p>
+
+<h1 class="font-heading text-5xl md:text-7xl leading-tight font-bold">
+Anidam
+</h1>
+
+<p class="mt-8 text-xl text-gray-600 max-w-xl">
+Helping ambitious businesses transform ideas into memorable digital experiences.
+</p>
+
+<div class="mt-10 flex flex-wrap gap-4">
+<a href="#contact"
+class="bg-accent text-white px-7 py-4 rounded-full font-medium hover:scale-105 transition">
+Start a Project
+</a>
+
+<a href="#projects"
+class="border px-7 py-4 rounded-full hover:bg-gray-50 transition">
+View Work
+</a>
+</div>
+
+</div>
+
+<div class="card p-8 flex flex-col justify-between fade">
+
+<div>
+<p class="text-sm uppercase text-gray-500 tracking-widest">
+Available
+</p>
+
+<h3 class="font-heading text-2xl mt-3">
+Currently accepting freelance projects.
+</h3>
+</div>
+
+<div class="space-y-4 text-gray-600">
+
+<div>
+<h4 class="font-semibold">Brand Identity</h4>
+<p>Modern visual systems that build trust.</p>
+</div>
+
+<div>
+<h4 class="font-semibold">Web Design</h4>
+<p>Fast, responsive websites designed for conversion.</p>
+</div>
+
+<div>
+<h4 class="font-semibold">Creative Direction</h4>
+<p>Strategy backed by thoughtful design.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="max-w-7xl mx-auto px-6 py-10 fade">
+
+<div class="grid lg:grid-cols-3 gap-6">
+
+<div class="card p-8 flex justify-center items-center">
+
+<div class="w-60 h-60 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-500">
+Photo Placeholder
+</div>
+
+</div>
+
+<div class="lg:col-span-2 card p-10">
+
+<h2 class="font-heading text-4xl mb-6">
+About Me
+</h2>
+
+<p class="text-gray-600 leading-8">
+I'm a creative freelancer focused on helping brands communicate with clarity,
+confidence, and purpose. My work combines thoughtful strategy with clean,
+modern design to create digital experiences that leave a lasting impression.
+</p>
+
+<p class="mt-5 text-gray-600 leading-8">
+From startups launching their first identity to established businesses refining
+their online presence, I collaborate closely with clients to deliver work that
+is both visually compelling and commercially effective.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="max-w-7xl mx-auto px-6 py-16 fade">
+
+<h2 class="font-heading text-4xl mb-10">
+Selected Projects
+</h2>
+
+<div class="grid-auto">
+
+<div class="card overflow-hidden transition duration-300 project">
+
+<div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">
+Project Thumbnail
+</div>
+
+<div class="p-7">
+
+<h3 class="font-heading text-2xl">
+Nova Studio
+</h3>
+
+<p class="mt-3 text-gray-600">
+A premium visual identity and responsive website designed for a boutique creative agency.
+</p>
+
+<a href="#" class="inline-block mt-5 text-accent font-semibold">
+View Project →
+</a>
+
+</div>
+
+</div>
+
+<div class="card overflow-hidden transition duration-300 project">
+
+<div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">
+Project Thumbnail
+</div>
+
+<div class="p-7">
+
+<h3 class="font-heading text-2xl">
+Peak Finance
+</h3>
+
+<p class="mt-3 text-gray-600">
+Landing page redesign focused on trust, performance, and higher conversion rates.
+</p>
+
+<a href="#" class="inline-block mt-5 text-accent font-semibold">
+View Project →
+</a>
+
+</div>
+
+</div>
+
+<div class="card overflow-hidden transition duration-300 project">
+
+<div class="h-52 bg-gray-200 flex items-center justify-center text-gray-500">
+Project Thumbnail
+</div>
+
+<div class="p-7">
+
+<h3 class="font-heading text-2xl">
+Bloom Wellness
+</h3>
+
+<p class="mt-3 text-gray-600">
+Complete branding system and digital experience for a modern wellness company.
+</p>
+
+<a href="#" class="inline-block mt-5 text-accent font-semibold">
+View Project →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="max-w-7xl mx-auto px-6 py-16 fade">
+
+<h2 class="font-heading text-4xl mb-10">
+Experience
+</h2>
+
+<div class="space-y-6">
+
+<div class="card p-8">
+<div class="flex justify-between flex-wrap gap-2">
+<h3 class="font-heading text-2xl">Lead Designer</h3>
+<span class="text-gray-500">2022 — Present</span>
+</div>
+<p class="font-medium mt-1">Independent Freelance Studio</p>
+<p class="mt-4 text-gray-600">
+Leading branding, web design, and creative strategy projects for startups,
+consultancies, and growing businesses worldwide.
+</p>
+</div>
+
+<div class="card p-8">
+<div class="flex justify-between flex-wrap gap-2">
+<h3 class="font-heading text-2xl">Senior UI Designer</h3>
+<span class="text-gray-500">2019 — 2022</span>
+</div>
+<p class="font-medium mt-1">Pixel Collective</p>
+<p class="mt-4 text-gray-600">
+Designed scalable digital products, collaborated with developers,
+and improved user experience across multiple client platforms.
+</p>
+</div>
+
+<div class="card p-8">
+<div class="flex justify-between flex-wrap gap-2">
+<h3 class="font-heading text-2xl">Graphic Designer</h3>
+<span class="text-gray-500">2017 — 2019</span>
+</div>
+<p class="font-medium mt-1">Studio North</p>
+<p class="mt-4 text-gray-600">
+Produced visual identities, print materials, and marketing assets for regional brands.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="max-w-7xl mx-auto px-6 py-16 fade">
+
+<h2 class="font-heading text-4xl mb-10">
+Services
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="card p-8">
+
+<h3 class="font-heading text-2xl">
+Starter
+</h3>
+
+<p class="text-accent text-3xl mt-5 font-bold">
+$750+
+</p>
+
+<ul class="mt-6 space-y-3 text-gray-600">
+<li>✔ Brand consultation</li>
+<li>✔ Landing page</li>
+<li>✔ Mobile responsive</li>
+<li>✔ Delivery support</li>
+</ul>
+
+</div>
+
+<div class="card p-8 border-2 border-accent">
+
+<h3 class="font-heading text-2xl">
+Professional
+</h3>
+
+<p class="text-accent text-3xl mt-5 font-bold">
+$2,500+
+</p>
+
+<ul class="mt-6 space-y-3 text-gray-600">
+<li>✔ Complete website</li>
+<li>✔ Brand identity</li>
+<li>✔ UX optimization</li>
+<li>✔ SEO basics</li>
+<li>✔ Launch assistance</li>
+</ul>
+
+</div>
+
+<div class="card p-8">
+
+<h3 class="font-heading text-2xl">
+Custom
+</h3>
+
+<p class="text-accent text-3xl mt-5 font-bold">
+Let's Talk
+</p>
+
+<ul class="mt-6 space-y-3 text-gray-600">
+<li>✔ Long-term partnership</li>
+<li>✔ Creative direction</li>
+<li>✔ Product design</li>
+<li>✔ Ongoing support</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="max-w-7xl mx-auto px-6 py-16 fade">
+
+<h2 class="font-heading text-4xl mb-10">
+Testimonials
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="card p-8">
+
+<p class="italic text-gray-600">
+"Working with Anidam completely transformed our online presence. Every detail
+felt intentional and elevated."
+</p>
+
+<div class="mt-6 font-semibold">
+Sarah Kim
+</div>
+
+<div class="text-sm text-gray-500">
+Founder, Nova Studio
+</div>
+
+</div>
+
+<div class="card p-8">
+
+<p class="italic text-gray-600">
+"Professional, responsive, and exceptionally creative. The final product
+exceeded every expectation."
+</p>
+
+<div class="mt-6 font-semibold">
+Daniel Ross
+</div>
+
+<div class="text-sm text-gray-500">
+CEO, Peak Finance
+</div>
+
+</div>
+
+<div class="card p-8">
+
+<p class="italic text-gray-600">
+"Our launch felt premium from day one thanks to the thoughtful design and
+strategy behind every decision."
+</p>
+
+<div class="mt-6 font-semibold">
+Emily Carter
+</div>
+
+<div class="text-sm text-gray-500">
+Marketing Director
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="max-w-7xl mx-auto px-6 py-20 fade">
+
+<div class="card p-10">
+
+<h2 class="font-heading text-4xl">
+Let's Build Something Great
+</h2>
+
+<p class="mt-5 text-gray-600 max-w-xl">
+Whether you're launching something new or refining an existing brand,
+I'd love to hear about your project.
+</p>
+
+<div class="mt-8 flex flex-wrap gap-6 text-lg">
+
+<a href="mailto:hello@anidam.com"
+class="text-accent font-semibold hover:underline">
+hello@anidam.com
+</a>
+
+<div class="flex gap-5">
+
+<a href="#" aria-label="LinkedIn" class="hover:text-accent transition">
+🔗
+</a>
+
+<a href="#" aria-label="Twitter" class="hover:text-accent transition">
+𝕏
+</a>
+
+<a href="#" aria-label="Dribbble" class="hover:text-accent transition">
+🏀
+</a>
+
+</div>
+
+</div>
+
+<form class="mt-10 grid md:grid-cols-2 gap-5">
+
+<input
+type="text"
+placeholder="Your Name"
+class="rounded-xl border p-4 outline-none focus:ring-2 focus:ring-accent">
+
+<input
+type="email"
+placeholder="Email"
+class="rounded-xl border p-4 outline-none focus:ring-2 focus:ring-accent">
+
+<textarea
+rows="5"
+placeholder="Tell me about your project..."
+class="md:col-span-2 rounded-xl border p-4 outline-none focus:ring-2 focus:ring-accent"></textarea>
+
+<button
+class="bg-accent text-white px-8 py-4 rounded-xl md:w-fit hover:scale-105 transition">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="py-10 text-center text-gray-500 text-sm">
+© 2026 Anidam · Creative Agency
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{
+  threshold:.15
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
